@@ -1,5 +1,0 @@
-2025/06/05-14:34:55.635 3101014 Creating DB /Users/vincentsham/Documents/popmart_bot/playwright-popmart-profile/Default/Local Storage/leveldb since it was missing.
-2025/06/05-14:34:55.644 3101014 Reusing MANIFEST /Users/vincentsham/Documents/popmart_bot/playwright-popmart-profile/Default/Local Storage/leveldb/MANIFEST-000001
-2025/06/05-14:35:05.604 3101014 Level-0 table #5: started
-2025/06/05-14:35:05.606 3101014 Level-0 table #5: 112757 bytes OK
-2025/06/05-14:35:05.608 3101014 Delete type=0 #3

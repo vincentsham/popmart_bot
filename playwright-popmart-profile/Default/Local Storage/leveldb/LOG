@@ -1,6 +1,0 @@
-2025/06/05-16:00:22.098 310849e Reusing MANIFEST /Users/vincentsham/Documents/popmart_bot/playwright-popmart-profile/Default/Local Storage/leveldb/MANIFEST-000001
-2025/06/05-16:00:22.100 310849e Recovering log #4
-2025/06/05-16:00:22.100 310849e Reusing old log /Users/vincentsham/Documents/popmart_bot/playwright-popmart-profile/Default/Local Storage/leveldb/000004.log 
-2025/06/05-16:01:22.105 31084a0 Level-0 table #8: started
-2025/06/05-16:01:22.111 31084a0 Level-0 table #8: 113254 bytes OK
-2025/06/05-16:01:22.116 31084a0 Delete type=0 #4
