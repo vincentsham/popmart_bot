@@ -168,13 +168,13 @@ def get_cart_item_count(page):
         info_title = page.locator('div.index_infoTitle__d5wSp').first
         if info_title.is_visible():
             num_items = int(info_title.inner_text().strip())
-            print(f"✅ Cart item count: {num_items}")
+            # print(f"✅ Cart item count: {num_items}")
             return num_items
         else:
-            print("❌ Cart item count not found.")
+            # print("❌ Cart item count not found.")
             return 0
     except Exception as e:
-        print(f"❌ Error getting cart item count")
+        # print(f"❌ Error getting cart item count")
         return 0
 
 def reserve_box(page):
@@ -357,7 +357,7 @@ def get_box(page):
             continue
 
         num_items = get_cart_item_count(page)
-        print(f"🛒 Number of items in cart: {num_items}")
+        # print(f"🛒 Number of items in cart: {num_items}")
         if num_items > 0:
             if not email_sent:
                 print("📧 Sending email notification...")
