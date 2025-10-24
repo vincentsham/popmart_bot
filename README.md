@@ -54,13 +54,9 @@ EMAIL_SENDER=youremail@gmail.com
 EMAIL_PASSWORD=your_app_password
 EMAIL_RECEIVER_NOTIFY=recipient1@gmail.com,recipient2@gmail.com
 EMAIL_RECEIVER_ADD_TO_CART=recipient3@gmail.com
-URL=https://www.popmart.com/ca/product/box-id
-CART_URL=https://www.popmart.com/ca/cart
-DEBUG=True
 ```
 
 > 💡 **Tip:** You’ll need to enable [2FA and App Passwords](https://support.google.com/mail/answer/185833?hl=en) for Gmail to work with this bot.
-> 🗒️ **Note:** Replace `box-id` in the `URL` with the actual box ID. For example, `40`, `50`, and `195` correspond to Labubu boxes.
 
 ---
 
@@ -69,7 +65,7 @@ DEBUG=True
 ### Launch Chrome with remote debugging and start the bot:
 
 ```bash
-python main.py --port 9222 --email_flag
+python labubu_bot.py --port 9222 --email_flag --toy_id 195
 ```
 
 **Arguments:**
@@ -77,7 +73,10 @@ python main.py --port 9222 --email_flag
 |------|--------------|----------|
 | `--port` | Chrome CDP debugging port | `9222` |
 | `--email_flag` | Enable email notifications | `False` |
+| `--toy_id` | Toy ID | `200` |
 
+
+> 🗒️ **Note:** Replace `box-id` in the `URL` with the actual box ID. For example, `40`, `50`, and `195` correspond to Labubu boxes.
 ---
 
 ## 🪄 Behavior Overview
@@ -113,11 +112,13 @@ python main.py --port 9222 --email_flag
 
 ```
 popmart-bot/
-├── main.py                  # Core automation logic
 ├── .env                     # Environment variables
+├── labubu_bot.py            # Core automation logic
+├── parameters.py            # Python parameters
 ├── requirements.txt         # Python dependencies
 ├── README.md                # This file
-└── utils/                   # (optional) future helpers
+└── utils.py                 # Utility functions
+
 ```
 
 ---
