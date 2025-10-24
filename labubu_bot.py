@@ -213,17 +213,6 @@ def get_box(page):
     email_sent = False
 
     while True:
-
-        if url :=next_url(page):
-            reload_page(page, url)
-        else:
-            reload_page(page, URL)
-
-        click_choose_multity_button(page)
-        box_num = search_box(page)
-        if box_num > 0:
-            safe_click_box(page)
-            
         num_items = get_cart_item_count(page)
         # print(f"🛒 Number of items in cart: {num_items}")
         if num_items > 0:
@@ -237,6 +226,16 @@ def get_box(page):
             reserve_box(page)
             page.wait_for_timeout(WAIT_TIME * 60 * 3)
             continue
+
+        click_choose_multity_button(page)
+        box_num = search_box(page)
+        if box_num > 0:
+            safe_click_box(page)
+
+        if url :=next_url(page):
+            reload_page(page, url)
+        else:
+            reload_page(page, URL)
 
         page.wait_for_timeout(REFRESH_TIME)
 
